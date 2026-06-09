@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // ── Soft palette ────────────────────────────────────────────────────────────
 const P = {
@@ -1243,6 +1244,9 @@ export default function ADHDBundle() {
         fontSize:10, color:P.nude, letterSpacing:1 }}>
         JONES & CO SIGNATURE SERVICES · ADHD SUCCESS BUNDLE · © 2025 · jonesandcosignatureservices.com
       </div>
+
+      {/* Vercel Analytics */}
+      <Analytics />
     </div>
   );
 }
